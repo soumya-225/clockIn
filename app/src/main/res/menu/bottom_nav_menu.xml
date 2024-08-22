@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_time_clock"
+        android:icon="@drawable/ic_home"
+        android:title="Time Clock" />
+
+    <item
+        android:id="@+id/nav_timesheets"
+        android:icon="@drawable/ic_home"
+        android:title="Timesheets" />
+
+
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@drawable/ic_home"
+        android:title="Menu" />
+</menu>
