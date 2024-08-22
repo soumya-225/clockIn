@@ -1,14 +1,335 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuFragment">
+    android:background="@android:color/white">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <!-- Organization Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Organization"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingVertical="8dp"/>
+        <!-- Organization Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/organization_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="Hello World"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Time Off Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/time_off_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time off"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Reports Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/reports_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reports"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Settings Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- People Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/people_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="People"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_time_tracking"
+            android:contentDescription="Time Tracking Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Tracking"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Organization -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_organization"
+            android:contentDescription="Organization Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="Organization"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Work Schedules -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_work_schedules"
+            android:contentDescription="Work Schedules Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Schedules"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Locations -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_locations"
+            android:contentDescription="Locations Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locations"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Activities -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_activities"
+            android:contentDescription="Activities Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activities"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Account Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Personal Settings -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_personal_settings"
+            android:contentDescription="Personal Settings Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Settings"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Help Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Support -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="25dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Support Icon"
+                android:src="@drawable/ic_support" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="Support"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
 </FrameLayout>
