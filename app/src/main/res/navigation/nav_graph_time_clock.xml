@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_time_clock"
+    app:startDestination="@id/time_clockFragment">
+
+    <fragment
+        android:id="@+id/time_clockFragment"
+        android:name="com.sks225.clockIn.TimeClockFragment"
+        android:label="fragment_time_clock"
+        tools:layout="@layout/fragment_time_clock" />
+</navigation>
